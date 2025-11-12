@@ -21,9 +21,9 @@ params:
   navbar:
     displayLogo: true
     logo:
-      path: prebake-logo.svg
-      width: 50
-      height: 50
+      path: prebake-icon.svg
+      width: 70
+      height: 70
   footer:
     displayPoweredBy: false
 
