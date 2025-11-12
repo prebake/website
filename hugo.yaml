@@ -1,6 +1,48 @@
 baseURL: https://prebake.dev/
 languageCode: en-us
-title: Prebake - A straightforward Developer Platform for Kubernetes
+title: Prebake
+
 module:
   imports:
     - path: github.com/imfing/hextra
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  description: Turn a bare Kubernetes cluster into a Developer Platform with just two commands.
+  externalLinkDecoration: true
+  analytics:
+    umami:
+      serverURL: "https://cloud.umami.is"
+      websiteID: "0d6f582d-bae6-4a73-b555-91866d19526d"
+  navbar:
+    displayLogo: true
+    logo:
+      path: prebake-logo.svg
+      width: 50
+      height: 50
+  footer:
+    displayPoweredBy: false
+
+menu:
+  main:
+    - name: Discord
+      weight: 5
+      url: "https://go.nadrama.com/discord"
+      params:
+        icon: discord
+    - name: GitHub
+      weight: 10
+      url: "https://github.com/prebake/prebake"
+      params:
+        icon: github
+  sidebar:
+    - name: GitHub
+      url: "https://github.com/prebake/prebake"
+      weight: 1
+
+outputs:
+  home: [html, llms]
